@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <title>FSNotes App</title>
-        <meta name="description" content="">
+        <meta name="description" content="nvALT, notes manager, notes, nvALT replacement, notational velocity">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <link rel="manifest" href="site.webmanifest">
@@ -17,13 +17,14 @@
         <style type="text/css">
         	header {
         		text-align: center;
-
         	}
 
         	body {
         		font-family: -apple-system, BlinkMacSystemFont, sans-serif;
         		margin: 0 auto;
+                padding: 0 20px;
         		width: 1024px;
+                max-width: 90%;
         	}
 
         	footer {
@@ -41,7 +42,9 @@
         	}
 
         	.navi {
+                list-style-type: none;
         		margin: 0 auto;
+                padding: 0;
         		text-align: center;
         	}
         		.navi li {
@@ -52,6 +55,28 @@
     		hr.s {
     			border-top: dashed 1px #d1d3a6;
     		}
+
+            img {
+                max-width: 90%;
+            }
+
+            /* Large desktop */
+            @media (min-width: 1200px) { ... }
+
+            /* Portrait tablet to landscape and desktop */
+            @media (min-width: 768px) and (max-width: 979px) {
+                max-width: 100%;
+            }
+
+            /* Landscape phone to portrait tablet */
+            @media (max-width: 767px) {
+                max-width: 100%;
+            }
+
+            /* Landscape phones and down */
+            @media (max-width: 480px) { 
+                max-width: 100%;
+            }
         </style>
     </head>
     <body>
@@ -125,7 +150,6 @@
 		</ul>
 
 		<hr class="s" />
-
 		<h3>iOS app</h3>
 		<p style="text-align: center;">
 			<img src="img/ios-screen.png" style="width: 300px;" />
@@ -143,7 +167,6 @@
 		</ul>
 
 		<hr class="s" />
-
 		<h2 id="community">Community</h2>
 
 		<h3>GitHub</h3>
@@ -153,9 +176,7 @@
 		<a href="https://twitter.com/fsnotesapp">https://twitter.com/fsnotesapp</a>
 
 		
-
 		<hr class="s" />
-
 		<h2 id="thanks">Hall of fame 🏆</h2>
 
 		<p>Special thanks for contribution in FSNotes:</p>
@@ -163,8 +184,6 @@
 		<a href="https://github.com/jeff-h">@jeff-h</a>, <a href="https://github.com/gingerbeardman">@gingerbeardman</a>, <a href="https://github.com/baranpirincal">@baranpirincal</a> 
 
 		<hr>
-
-
 		<footer>© 2017–2018 FSNotes</footer>
 
         <script src="js/vendor/modernizr-3.5.0.min.js"></script>
